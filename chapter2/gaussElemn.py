@@ -11,7 +11,7 @@ for i in range(0,n):
 
 # Gauss Elimination method
 for i in range(n):
-  if a[i][j] == 0.00:
+  if a[i][i] == 0.00:
     sys.exit("Divide by zero detected")
 
   for j in range(i+1,n):
