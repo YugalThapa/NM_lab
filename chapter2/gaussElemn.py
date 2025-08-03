@@ -27,7 +27,7 @@ for i in range(n-2,-1,-1):
   x[i] = a[i][n]
 
   for j in range(i+1,n):
-    x[i] -= a[i][j] * x[j];
+    x[i] -= a[i][j] * x[j]
 
   x[i] /= a[i][j]
 
