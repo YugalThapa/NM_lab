@@ -3,7 +3,7 @@ import math
 def f(x):
     # Define your function here
     return x**2 - math.sin(x) - 1
-
+ 
 def g(x):
      return 2*x - math.cos(x)
 
@@ -14,7 +14,7 @@ def newton_raphson(x0, e=0.0001, max_iter=100):
             return None
         
         x1 = x0 - f(x0) / g(x0)
-        print(f"{i+1} -> x0= {round(x0,4)}, f(x0)= {round(f(x0),4)}, g(x0)= {round(g(x0),4)}, x1= {round(x1,6)}, f(x1)= {round(f(x1),4)}\n")
+        #print(f"{i+1} -> x0= {round(x0,4)}, f(x0)= {round(f(x0),4)}, g(x0)= {round(g(x0),4)}, x1= {round(x1,6)}, f(x1)= {round(f(x1),4)}\n")
 
         if abs(f(x1)) <= e:
             print(f"Root found at iteration {i}: {x1}")

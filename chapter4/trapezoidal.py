@@ -2,7 +2,7 @@
 import math as m
 
 def f(x):
-    return m.cos((m.pi*x)/2)+5
+    return x**2
 
 def trapezoidal():
     lower_limit = float(input("lower limit: "))

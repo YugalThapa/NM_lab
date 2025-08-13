@@ -12,7 +12,7 @@ def bisection(a, b, tol=1e-4, max_iter=100):
 
     for i in range(max_iter):
         c = (a + b) / 2
-        print(f"{i+1} -> a= {round(a,4)}, b= {round(b,4)}, f(a)= {round(f(a),4)}, f(b)= {round(f(b),4)}, c= {round(c,6)}, f(c)= {round(f(c),4)}\n")
+        #print(f"{i+1} -> a= {round(a,4)}, b= {round(b,4)}, f(a)= {round(f(a),4)}, f(b)= {round(f(b),4)}, c= {round(c,6)}, f(c)= {round(f(c),4)}\n")
         if abs(f(c)) < tol:
             print(f"Root found at iteration {i}: {c}")
             return c
